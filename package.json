@@ -1,0 +1,17 @@
+{
+  "name": "sol-toke-transfer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/client/main.ts",
+    "build:program-rust": "cargo build-bpf --manifest-path=./Cargo.toml --bpf-out-dir=dist/program"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.10.1",
+    "@types/mz": "^2.7.3",
+    "mz": "^2.7.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}
